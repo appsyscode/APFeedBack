@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1EFA7891E1949B6A84FBED79D7C4AA0C2AE08F12",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A52F0A90DC3978697E7C65D136EDE0CB6414CF3D" : 0,
+    "1EFA7891E1949B6A84FBED79D7C4AA0C2AE08F12" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "142E28C5-71D2-4721-81E5-3B8504657046",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A52F0A90DC3978697E7C65D136EDE0CB6414CF3D" : "",
+    "1EFA7891E1949B6A84FBED79D7C4AA0C2AE08F12" : "APFeedBack\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "APFeedBack",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/APFeedBack.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/devalios\/APFeedBack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1EFA7891E1949B6A84FBED79D7C4AA0C2AE08F12"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/devalios\/PushStaticLibrary",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A52F0A90DC3978697E7C65D136EDE0CB6414CF3D"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  APFeedBack
+
+  Created by Parti Albert on 2016. 04. 08..
+  Copyright © 2016. devalios. All rights reserved.
+*/
+
+///APFeedBack Localizable//////
+"AP_FeedBack" = "APFeedBack";
+"AP_Back" = "Back";
+
+
+"AP_Question" = "Question";
+"AP_Request" = "Request";
+"AP_Bug Report" = "Bug Report";
+"AP_Other" = "Other";
+"AP_Topic selection" = "Topic selection";
+"AP_Cancel" = "Cancel";
+"AP_OK" = "OK";
+"AP_Attachments" = "Attachments";
+"AP_Attachment1"="Select the feedback attachment (picture)";
+"AP_Attachment2"="Send log file";
+"AP_Camera"="Camera";
+"AP_PhotoLibrary"="Select from the album";
+"AP_Mail" = "Mail";
+
+"AP_Device and Application info" = "Device and Application info";
+"AP_Topic" = "Topic";
+"AP_Device" = "Device:";
+"AP_iOS" = "iOS:";
+"AP_AppNAMe" = "Name:";
+"AP_Versions" = "Versions:";
+"AP_Build" = "Build:";
+
+"AP_Error" = "Error";
+"AP_Mail no configuration" = "Mail no configuration";
+"AP_Dismiss" = "Dismiss";
+
+//--------------*******------------//

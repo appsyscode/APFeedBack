@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Mn-nG-Smo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +16,55 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk7-G8-WYT">
+                                <rect key="frame" x="203" y="164" width="195" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="uA4-PL-CQ1"/>
+                                </constraints>
+                                <state key="normal" title="APFeedBack Push"/>
+                                <connections>
+                                    <action selector="feedback_Push:" destination="whP-gf-Uak" eventType="touchUpInside" id="nPY-D1-iIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncH-vz-Khz">
+                                <rect key="frame" x="203" y="263" width="195" height="30"/>
+                                <state key="normal" title="APFeedBack Modal"/>
+                                <connections>
+                                    <action selector="feedback_modal:" destination="whP-gf-Uak" eventType="touchUpInside" id="SH1-yh-wyL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jk7-G8-WYT" firstAttribute="trailing" secondItem="ncH-vz-Khz" secondAttribute="trailing" id="5K1-QC-6w7"/>
+                            <constraint firstItem="jk7-G8-WYT" firstAttribute="leading" secondItem="ncH-vz-Khz" secondAttribute="leading" id="Vpg-zX-E0q"/>
+                            <constraint firstItem="jk7-G8-WYT" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="fXd-9r-BJh"/>
+                            <constraint firstItem="jk7-G8-WYT" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="lxO-v1-2Nv"/>
+                            <constraint firstItem="ncH-vz-Khz" firstAttribute="top" secondItem="jk7-G8-WYT" secondAttribute="bottom" constant="69" id="nOa-GM-vnd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1ne-zZ-xT8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pDM-ST-1Ws">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Mn-nG-Smo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CFP-A7-YoY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="kfG-9M-FjK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5g-kM-FSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
         </scene>

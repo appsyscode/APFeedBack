@@ -7,6 +7,7 @@
 //
 
 #import "APViewController.h"
+#import <APFeedBack/APFeedTableViewController.h>
 
 @interface APViewController ()
 
@@ -18,6 +19,32 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (IBAction)feedback_Push:(id)sender;
+
+{
+    
+    APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
+    fd.developer_LogFile=NO;
+    fd.mailHTML=YES;
+    [self.navigationController pushViewController:fd animated:YES];
+    
+    
+}
+
+- (IBAction)feedback_modal:(id)sender
+
+{
+    
+    
+    
+    APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:fd];
+    navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:navController animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning

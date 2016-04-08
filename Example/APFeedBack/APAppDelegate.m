@@ -7,12 +7,17 @@
 //
 
 #import "APAppDelegate.h"
+#import <APFeedBack/DeviceInfo.h>
 
 @implementation APAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[DeviceInfo deviceManager]logfilecreate];
+    
+    NSLog(@"Appdelegate");
+    
     return YES;
 }
 

@@ -1,12 +1,13 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
 
-target 'APFeedBack_Example', :exclusive => true do
-  pod 'APFeedBack', :path => '../'
+target 'APFeedBack_Example' do
+
+pod "APFeedBack"
+
 end
 
-target 'APFeedBack_Tests', :exclusive => true do
-  pod 'APFeedBack', :path => '../'
 
-  pod 'FBSnapshotTestCase'
-end
+
