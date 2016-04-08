@@ -16,9 +16,46 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 APFeedBack is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+````ruby
 pod "APFeedBack"
-```
+````
+
+## Example
+````objective-c
+- (IBAction)feedback_Push:(id)sender;
+
+{
+
+APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
+fd.developer_LogFile=NO;
+fd.mailHTML=YES;
+[self.navigationController pushViewController:fd animated:YES];
+
+}
+
+- (IBAction)feedback_modal:(id)sender
+
+{
+
+APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
+UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:fd];
+navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+[self presentViewController:navController animated:YES completion:nil];
+
+}
+````
+
+
+````objective-c  
+[[DeviceInfo deviceManager]logfilecreate];
+````
+
+
+
+[img0]:APFeedBack1.png
+[img1]:APFeedBack2.png
+[img2]:APFeedBack3.png
+
 
 ## Author
 
