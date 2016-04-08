@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
 [![Platform](https://img.shields.io/cocoapods/p/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
 
+![Screenshot0][img0]
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
