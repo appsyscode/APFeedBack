@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'APFeedBack_Example', :exclusive => true do
+  pod 'APFeedBack', :path => '../'
+end
+
+target 'APFeedBack_Tests', :exclusive => true do
+  pod 'APFeedBack', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
