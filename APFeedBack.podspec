@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "APFeedBack"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "APFeedBack Library"
 
 # This description is used to generate tags and improve search results.
@@ -20,18 +20,18 @@ Pod::Spec.new do |s|
 Feedback to send iOS enabled developer NSLog file create .txt
                        DESC
 
-  s.homepage         = "https://github.com/devalios/APFeedBack"
+  s.homepage         = "https://github.com/appsyscode/APFeedBack"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "devalios" => "info@techmobilesoft.com" }
-  s.source           = { :git => "https://github.com/devalios/APFeedBack.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/devalios'
+  s.author           = { "appsyscode" => "info@techmobilesoft.com" }
+  s.source           = { :git => "https://github.com/appsyscode/APFeedBack.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/appsyscode'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/*'
-# s.resource_bundles = {
+#  s.resource_bundles = {
 #    'APFeedBack' => ['Pod/Assets/*.png']
 #  }
 

@@ -27,7 +27,7 @@
 {
     
     APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
-    fd.developer_LogFile=NO;
+    fd.developer_LogFile=YES;
     fd.mailHTML=YES;
     [self.navigationController pushViewController:fd animated:YES];
     

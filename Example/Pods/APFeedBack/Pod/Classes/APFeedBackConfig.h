@@ -19,9 +19,9 @@
 #define NavigationBack_arrow_Color [UIColor colorWithRed:0.584 green:0.141 blue:0.223 alpha:0.970]
 #define NavigationItem_rightButtonColor [UIColor colorWithRed:0.584 green:0.141 blue:0.223 alpha:0.970]
 #define NavigationItem_leftButtonColor [UIColor colorWithRed:0.584 green:0.141 blue:0.223 alpha:0.970]
-#define NavigationController_Color [UIColor colorWithRed:0.979 green:0.970 blue:0.989 alpha:1.000]
+#define NavigationController_Color [UIColor colorWithWhite:1.000 alpha:1.000]
 
-#define TableviewBackground_Color [UIColor colorWithRed:0.979 green:0.970 blue:0.989 alpha:1.000]
+#define TableviewBackground_Color [UIColor colorWithWhite:1.000 alpha:1.000]
 #define TableViewSeparator_Color [UIColor colorWithRed:0.095 green:0.114 blue:0.201 alpha:0.228]
 #define TableviewCell_Color [UIColor clearColor]
 
