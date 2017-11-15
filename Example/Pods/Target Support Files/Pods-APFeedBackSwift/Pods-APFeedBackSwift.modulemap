@@ -1,0 +1,6 @@
+framework module Pods_APFeedBackSwift {
+  umbrella header "Pods-APFeedBackSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

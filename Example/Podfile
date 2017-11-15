@@ -8,6 +8,10 @@ target 'APFeedBack_Example' do
 pod "APFeedBack"
 
 end
+target 'APFeedBackSwift' do
+use_frameworks!
+pod "APFeedBack"
 
+end
 
 

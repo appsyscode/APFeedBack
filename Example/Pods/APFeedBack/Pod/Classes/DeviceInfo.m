@@ -68,7 +68,7 @@
         NSString *documentsDirectory = [paths objectAtIndex:0];
         NSString *logPath = [documentsDirectory stringByAppendingPathComponent:@"feedbacklog.txt"];
         freopen([logPath cStringUsingEncoding:NSASCIIStringEncoding],"a+",stderr);
-        // freopen([logPath cStringUsingEncoding:NSASCIIStringEncoding],"a+",stdout);
+       // freopen([logPath cStringUsingEncoding:NSASCIIStringEncoding],"a+",stdout);
         NSLog(@"developer");
     }
 }
@@ -82,7 +82,7 @@
     sysctlbyname("hw.machine", machine, &size, NULL, 0);
     NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
     free(machine);
-    
+
     if ([platform isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
     if ([platform isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
     if ([platform isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";

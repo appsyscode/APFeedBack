@@ -1,0 +1,6 @@
+framework module APFeedBack {
+  umbrella header "APFeedBack-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}
