@@ -1,6 +1,6 @@
 # APFeedBack
 
-<!--[![CI Status](http://img.shields.io/travis/devalios/APFeedBack.svg?style=flat)](https://travis-ci.org/devalios/APFeedBack)-->
+<!--[![CI Status](http://img.shields.io/travis/appsyscode/APFeedBack.svg?style=flat)](https://travis-ci.org/appsyscode/APFeedBack)-->
 [![Version](https://img.shields.io/cocoapods/v/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
 [![License](https://img.shields.io/cocoapods/l/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
 [![Platform](https://img.shields.io/cocoapods/p/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
@@ -30,7 +30,7 @@ pod "APFeedBack"
 {
 
 APFeedTableViewController *fd = [[APFeedTableViewController alloc]init];
-fd.developer_LogFile=NO;
+fd.developer_LogFile=NO;  //To turn feedbacklog.txt on, turn on developer_LogFile = YES
 fd.mailHTML=YES;
 [self.navigationController pushViewController:fd animated:YES];
 
@@ -62,7 +62,7 @@ navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 
 ## Author
 
-devalios, info@techmobilesoft.com
+appsyscode, info@appsyscode.com
 
 ## License
 
