@@ -57,28 +57,28 @@
 		0D97A9861EF0940F1C08560785DA5B1C /* APFeedTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APFeedTableViewController.h; path = Pod/Classes/APFeedTableViewController.h; sourceTree = "<group>"; };
 		0DD24EE62E4660CDA9257292012148E4 /* APFeedTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APFeedTableViewController.m; path = Pod/Classes/APFeedTableViewController.m; sourceTree = "<group>"; };
 		0F0DB3269617AB6D280B69E305BEC47B /* Pods-APFeedBackSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBackSwift-resources.sh"; sourceTree = "<group>"; };
-		15B5D72CB8924F4BFADAED9F6E728DA6 /* APFeedBack-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "APFeedBack-framework.modulemap"; sourceTree = "<group>"; };
+		15B5D72CB8924F4BFADAED9F6E728DA6 /* APFeedBack-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "APFeedBack-framework.modulemap"; sourceTree = "<group>"; };
 		1B01CD0AD60FB1862A80A940BE1F7E3F /* APFeedBack-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "APFeedBack-library-dummy.m"; path = "../APFeedBack-library/APFeedBack-library-dummy.m"; sourceTree = "<group>"; };
 		29791574A8267EA16D9EA2486A3D872C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29DF401E342DE16AC785F1804F6B18A7 /* APFeedBack-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APFeedBack-framework-dummy.m"; sourceTree = "<group>"; };
 		2BF858CB63764BF55A1E10DCAD8A6989 /* Pods-APFeedBack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3B0DF7A457F6421B0D50C139D3F257A9 /* Pods_APFeedBackSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APFeedBackSwift.framework; path = "Pods-APFeedBackSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		41B474270CB2F8D54CB137BF3E3F9543 /* libAPFeedBack-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAPFeedBack-library.a"; path = "libAPFeedBack-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0DF7A457F6421B0D50C139D3F257A9 /* Pods_APFeedBackSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APFeedBackSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B474270CB2F8D54CB137BF3E3F9543 /* libAPFeedBack-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAPFeedBack-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4543F90A65BF2A2B14272B3D854719A5 /* APFeedBack-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "APFeedBack-framework.xcconfig"; sourceTree = "<group>"; };
 		462F0F9AF9A613E500776C9D661F3098 /* Pods-APFeedBackSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBackSwift-frameworks.sh"; sourceTree = "<group>"; };
-		4906945F9D501F99F8D8B350C3A928FD /* Pods-APFeedBackSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-APFeedBackSwift.modulemap"; sourceTree = "<group>"; };
+		4906945F9D501F99F8D8B350C3A928FD /* Pods-APFeedBackSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-APFeedBackSwift.modulemap"; sourceTree = "<group>"; };
 		49C59F1F1026042176737B085160A686 /* Pods-APFeedBack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5561D9FB8BB2AA7AA5BBC77DF1A61119 /* Pods-APFeedBack_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APFeedBack_Example-dummy.m"; sourceTree = "<group>"; };
 		5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		5B175ABBECD9EE0E2013EBC5E22764F9 /* Pods-APFeedBack_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBack_Example-resources.sh"; sourceTree = "<group>"; };
-		6702B65E1CA2F92CF424F5E7D3D6DA1F /* libPods-APFeedBack_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-APFeedBack_Example.a"; path = "libPods-APFeedBack_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6702B65E1CA2F92CF424F5E7D3D6DA1F /* libPods-APFeedBack_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APFeedBack_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F93B9C71CE67FD8E805814D95BBE2CB /* Pods-APFeedBackSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBackSwift-acknowledgements.plist"; sourceTree = "<group>"; };
 		779B02D031AC3554708CF1AB0DF58118 /* Pods-APFeedBack_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBack_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		797D8BC99D1A8D5BC43673FA1D59ED0D /* APFeedBack-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APFeedBack-library-prefix.pch"; path = "../APFeedBack-library/APFeedBack-library-prefix.pch"; sourceTree = "<group>"; };
 		80F38BA6308DF2DF9F741FF1083B3E7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8817345D13DAA2EEE03C34948B02C4B5 /* Pods-APFeedBack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.release.xcconfig"; sourceTree = "<group>"; };
-		89880FE1D6534A2CA1E9D2234D75FC2B /* APFeedBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APFeedBack.framework; path = "APFeedBack-framework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89880FE1D6534A2CA1E9D2234D75FC2B /* APFeedBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APFeedBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942F928C2735D2F83FE6DF1E93B9D82B /* DeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = Pod/Classes/DeviceInfo.h; sourceTree = "<group>"; };
 		9AA17FFC6DB023D078B7168380023867 /* Pods-APFeedBackSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBackSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A300EA49ABDC633DC0E6E65A1031752A /* Pods-APFeedBackSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBackSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,7 +204,6 @@
 				BA09A2DD3D68F5085CC752A3972E0D6B /* Localizable.strings */,
 				E91B8D667C2890EF49D5A7B7460BC554 /* Support Files */,
 			);
-			name = APFeedBack;
 			path = APFeedBack;
 			sourceTree = "<group>";
 		};
@@ -362,14 +361,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 02A69B14A238F14802E7EA326EF10E66 /* Products */;
@@ -500,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -510,6 +511,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -517,6 +519,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -647,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -657,6 +661,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -664,6 +669,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let fd = APFeedTableViewController()
         fd.developer_LogFile = true
         fd.mailHTML = true
-        navigationController?.pushViewController(fd as? UIViewController ?? UIViewController(), animated: true)
+        navigationController?.pushViewController(fd as? UIViewController ?? UITableViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {
