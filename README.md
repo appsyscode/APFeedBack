@@ -30,7 +30,7 @@ pod "APFeedBack"
 ````ruby
 pod 'APFeedBack', '~> 0.1.4'
 ````
-## Example
+### Example objective-C
 ````objective-c
 - (IBAction)feedback_Push:(id)sender;
 
@@ -59,6 +59,7 @@ navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 
 ````
 ---
+### Example Swift
 
 ````Swift
 
