@@ -53,13 +53,32 @@ navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 [self presentViewController:navController animated:YES completion:nil];
 
 }
-````
 
-
-````objective-c  
+//AppDelegate
 [[DeviceInfo deviceManager]logfilecreate];
-````
 
+````
+---
+
+````Swift
+
+ @IBAction func openPushViewController(_ sender: UIButton) {
+	let fd = APFeedTableViewController()
+	fd.developer_LogFile = true
+	fd.mailHTML = true
+	navigationController?.pushViewController(fd, animated: true)
+}
+@IBAction func openModalViewController(_ sender: UIButton) {
+	let fd = APFeedTableViewController()
+	fd.developer_LogFile = true
+	fd.mailHTML = true
+	fd.modalPresentationStyle = .formSheet
+	present(fd, animated: true, completion: nil)
+}
+
+ //AppDelegate
+ DeviceInfo.deviceManager().logfilecreate()
+````
 
 
 [img0]:APFeedBack1.png
