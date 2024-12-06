@@ -52,7 +52,7 @@
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:UITableViewStyleGrouped];
+    self = [super initWithStyle:UITableViewStyleInsetGrouped];
     
     if (self)
     {
@@ -90,7 +90,6 @@
      self.toRecipients = [NSArray arrayWithObjects:mail_toRecipients,nil];
      self.ccRecipients = [NSArray arrayWithObjects:mail_ccRecipients,nil];
      self.bccRecipients = [NSArray arrayWithObjects:mail_bccRecipients,nil];
-
     
     self.navigationItem.title=NSLocalizedString(@"AP_FeedBack", nil);
     
@@ -153,11 +152,11 @@
 {
     
     if (section == 0) {
-        return [self.Items1 count];
+        return 2;//[self.Items1 count];
         
     }
     else if (section == 1) {
-        return [self.Items2 count];
+        return 2;//[self.Items2 count];
         
     }
     else if (section == 2) {
@@ -220,7 +219,8 @@
             cell.detailTextLabel.font = celldetailtextLabelFont;
             cell.textLabel.textColor = celltextLabelColor;
             cell.detailTextLabel.textColor = celldetailtextLabelColor;
-           
+            cell.accessoryView = nil;
+            
         }
         else if (indexPath.row==1)
         {
@@ -233,14 +233,14 @@
             self.textV.tintColor=TableViewTextView_TintColor;
             self.textV.editable=YES;
             self.textV.scrollEnabled = NO;
-            
+            self.textV.keyboardAppearance = UIKeyboardAppearanceDark;
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             self.textV.text = [NSString stringWithFormat:@"%@",[defaults objectForKey:FeedBackText_Key]];
             
             [cell.contentView addSubview:self.textV];
             self.tableView.rowHeight=cellRowTextView;
-            
-             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.accessoryView =nil;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
     
@@ -275,6 +275,7 @@
             cell.detailTextLabel.font = celldetailtextLabelFontIMAGE;
             cell.textLabel.textColor = celltextLabelColor;
             cell.detailTextLabel.textColor = celldetailtextLabelColor;
+            cell.accessoryView=nil;
             
         }
         else if (indexPath.row==1)
@@ -380,6 +381,14 @@
     NSString *otherButtonTitle = NSLocalizedString(@"AP_OK", nil);
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIView *firstSubview = alertController.view.subviews.firstObject;
+
+    UIView *alertContentView = firstSubview.subviews.firstObject;
+
+    for (UIView *subSubView in alertContentView.subviews) { //This is main catch
+        subSubView.backgroundColor = TableviewBackground_Color; //Here you change background
+    }
   
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
@@ -406,12 +415,25 @@
 
     
     [viewController.view addSubview:self.topicPicker];
+    viewController.view.backgroundColor=TableviewBackground_Color;
     
     [self.topicPicker reloadAllComponents];
     
     [alertController setValue:viewController forKey:@"contentViewController"];
     
- 
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setAlignment:NSTextAlignmentCenter];
+    NSMutableAttributedString *titleText;
+    titleText = [[NSMutableAttributedString alloc]
+                 initWithString:title
+                 attributes:@{NSParagraphStyleAttributeName: paragraphStyle,
+                              NSFontAttributeName : [UIFont boldSystemFontOfSize:17],
+                              NSForegroundColorAttributeName :[UIColor whiteColor]
+                              }];
+    
+    [alertController setValue:titleText  forKey:@"attributedTitle"];
+    [alertController.view setTintColor:[UIColor whiteColor]];
+    alertController.view.backgroundColor=TableviewBackground_Color;
     [alertController addAction:cancelAction];
     [alertController addAction:otherAction];
     
@@ -533,6 +555,7 @@
 // ---------------------------------------------------------------------------------------------------------------
 
 - (void)createImagePickerControllerWithSourceType:(UIImagePickerControllerSourceType)sourceType{
+    
     UIImagePickerController *controller = [[UIImagePickerController alloc] init];
     controller.sourceType = sourceType;
     controller.allowsEditing = YES;
@@ -598,7 +621,7 @@
     [defaults setObject:self.textV.text forKey:FeedBackText_Key];
     [defaults synchronize];
     
-    [self.tableView reloadData];
+   // [self.tableView reloadData];
 }
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -679,7 +702,7 @@
         }
         [self presentViewController:controller animated:YES completion:nil];
     } else {
-        if ([UIAlertController class]) {
+  
             UIAlertController *alert= [UIAlertController alertControllerWithTitle:NSLocalizedString(@"AP_Error", nil)
                                                                           message:NSLocalizedString(@"AP_Mail no configuration", nil)
                                                                    preferredStyle:UIAlertControllerStyleAlert];
@@ -692,14 +715,7 @@
             
             [alert addAction:dismiss];
             [self presentViewController:alert animated:YES completion:nil];
-        } else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"AP_Error", nil)
-                                                            message:NSLocalizedString(@"AP_Mail no configuration", nil)
-                                                           delegate:nil
-                                                  cancelButtonTitle:NSLocalizedString(@"AP_Dismiss", nil)
-                                                  otherButtonTitles:nil];
-            [alert show];
-        }
+        
     }
 }
 // ---------------------------------------------------------------------------------------------------------------
@@ -720,7 +736,7 @@
     if (result == MFMailComposeResultCancelled) {
         completion = nil;
     } else if (result == MFMailComposeResultFailed && error) {
-        if ([UIAlertController class]) {
+        
             UIAlertController *alert= [UIAlertController alertControllerWithTitle:NSLocalizedString(@"AP_Error", nil)
                                                                           message:error.localizedDescription
                                                                    preferredStyle:UIAlertControllerStyleAlert];
@@ -733,14 +749,7 @@
             
             [alert addAction:dismiss];
             [self presentViewController:alert animated:YES completion:nil];
-        } else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"AP_Error", nil)
-                                                            message:error.localizedDescription
-                                                           delegate:nil
-                                                  cancelButtonTitle:NSLocalizedString(@"AP_Dismiss", nil)
-                                                  otherButtonTitles:nil];
-            [alert show];
-        }
+        
     }
     
     [controller dismissViewControllerAnimated:YES completion:completion];

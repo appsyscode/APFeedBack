@@ -3,347 +3,287 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004317229D9F84F83671B5F446B20D86 /* DeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 942F928C2735D2F83FE6DF1E93B9D82B /* DeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04C3556BC811968BE7CA9622B607622C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E9429243F040FCE0AB06ACD775922 /* DeviceInfo.m */; };
-		0D656150447D692281D0057185DE2065 /* Pods-APFeedBack_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561D9FB8BB2AA7AA5BBC77DF1A61119 /* Pods-APFeedBack_Example-dummy.m */; };
-		15891DC21D58BB5531DF677FA70D4604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
-		18A571D6C4A465BE23ABF8561A146071 /* APFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD24EE62E4660CDA9257292012148E4 /* APFeedTableViewController.m */; };
-		32E83EB880350C0ADE913F1FE8A3F967 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = BA09A2DD3D68F5085CC752A3972E0D6B /* Localizable.strings */; };
-		331DE76365E884F8358D3B6219D4A383 /* APFeedBack-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B01CD0AD60FB1862A80A940BE1F7E3F /* APFeedBack-library-dummy.m */; };
-		3F431CD2D61ABD06DECD2EC9550F90D7 /* DeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 942F928C2735D2F83FE6DF1E93B9D82B /* DeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4053AAF651518A3BACD35ACE4C13B3A4 /* APFeedBack-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1F74E365285F3270EE37B488BB4360 /* APFeedBack-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4072CF6A5D7D288043A20D74B88044A5 /* APFeedBack-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF401E342DE16AC785F1804F6B18A7 /* APFeedBack-framework-dummy.m */; };
-		48DF204C784263E1AFBD90AFFA7DD6E7 /* APFeedBackConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8201DAB53B675D1989CF1319744020 /* APFeedBackConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AF5E86BC3ACC3FA9DEB67DFDB04ADBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
-		614C74B9A9BB56CD2218873C99B471A7 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0E9429243F040FCE0AB06ACD775922 /* DeviceInfo.m */; };
-		625F0C291C1910FB3D13E62C07E082D0 /* Pods-APFeedBackSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C185261A30A5BA9102123335B6465D63 /* Pods-APFeedBackSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E4E76DC9441AA409EFB60B3BD03619A /* APFeedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D97A9861EF0940F1C08560785DA5B1C /* APFeedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AB5E1BC85C67C6551956A870A5FB70A /* APFeedBackConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8201DAB53B675D1989CF1319744020 /* APFeedBackConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A6D1824BE61C98AC79D083DFB4B7DF4 /* APFeedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D97A9861EF0940F1C08560785DA5B1C /* APFeedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA041B196638739B8B84F3F005ADBAC9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */; };
-		AF023106E547B226605F649E9E1BB447 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */; };
-		B4D4DA9484DB8EC4D2356DD2F10A5CAB /* Pods-APFeedBackSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D598C9BC333C22687A2667D63121DC6 /* Pods-APFeedBackSwift-dummy.m */; };
-		D7B415553739DA9A2FF81CB488575EEB /* APFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD24EE62E4660CDA9257292012148E4 /* APFeedTableViewController.m */; };
-		E7B65CCBFDEB0511897199F633A15666 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = BA09A2DD3D68F5085CC752A3972E0D6B /* Localizable.strings */; };
-		EF2255DD9C963D6587FCA066CD1FB2EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
-		FD277F17B5D0C286AC106103607D7EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
+		28B37C2069D74A66565F1DD764CE32A3 /* APFeedBackConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4988C3B7AA3BE115B3C1B5FF00FEA6ED /* APFeedBackConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E054151469C2D41D35B1ACD45B1DD85 /* APFeedBack-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0317F3CDA9F73973076295F19D3D971 /* APFeedBack-framework-dummy.m */; };
+		2EC57C6EB4E563691182F242E1475874 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = C6A9AB5BFEFC0768CA7EB145BBD67C84 /* Localizable.strings */; };
+		34938918676D6154390EBFFFE9AAA5EA /* DeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 846135A4ECEE3708B94F7C7744EF232A /* DeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C495B4987FB51A910FE3669B9924A1A /* APFeedBack-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ABDD89C7D5B763561638364B129A59 /* APFeedBack-library-dummy.m */; };
+		43B729370CE89B5C500BFC26FA488D34 /* APFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8695A77E52627B26BB82B537D581698F /* APFeedTableViewController.m */; };
+		52ADDB5E35757D03AA5DE1CAC8630878 /* Pods-APFeedBack_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFD1E7211912A7D9DB547E2CD4CFD0 /* Pods-APFeedBack_Example-dummy.m */; };
+		54C1B7A8219A6DE940255B8CDA18F5B6 /* Pods-APFeedBackSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 036202B3B645D5B5332F99B60B0234B1 /* Pods-APFeedBackSwift-dummy.m */; };
+		5C3137A9B2EC6D326C6C761C5018B589 /* Pods-APFeedBackSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 290957007D9437C7DDA7A5F86866C1A0 /* Pods-APFeedBackSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7297E971428F553CEFB0CD995EDEC155 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = C6A9AB5BFEFC0768CA7EB145BBD67C84 /* Localizable.strings */; };
+		733039076709D04C4143155CC5A67630 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA16CCC1602D5C902B161A316B5280 /* DeviceInfo.m */; };
+		8273E7AE44824892B1DA8C79F3DB6C70 /* APFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8695A77E52627B26BB82B537D581698F /* APFeedTableViewController.m */; };
+		978361ECAB22096F9ABF9543BEF74525 /* APFeedBack-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6296CC292C9DEE8623716214D10468 /* APFeedBack-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B1189328B97B62F871D359A889316D6 /* APFeedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE18547F39A5CDDE03AEDB7F88A5460 /* APFeedTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD51C088C3355872C59CCF60644912B9 /* APFeedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE18547F39A5CDDE03AEDB7F88A5460 /* APFeedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7C1EE8DAC5C20E389C950B319E42FDD /* DeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 846135A4ECEE3708B94F7C7744EF232A /* DeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF0B808A91C96F4225A30E9EF7BB36BF /* APFeedBackConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4988C3B7AA3BE115B3C1B5FF00FEA6ED /* APFeedBackConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE541E9FC6D737CDECEA14BB444E36D3 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA16CCC1602D5C902B161A316B5280 /* DeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5BF9A300498F5E532A19D7EFFC99D06 /* PBXContainerItemProxy */ = {
+		1A9D4ABFFEF132DF12D720CCD90643EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A02059144CFFE574FA148643BD066148;
+			remoteGlobalIDString = A9FABBBFAD2644FF9EBE795B94414EE6;
 			remoteInfo = "APFeedBack-library";
 		};
-		E6C8585728D4AFB18728718E44046E1A /* PBXContainerItemProxy */ = {
+		4E360C678FA713210EF5BA3CDE243898 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D0AA43C9E75F71D50222B80F843F221;
+			remoteGlobalIDString = B17897D79403A1E619F81C005D9A9C0F;
 			remoteInfo = "APFeedBack-framework";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B585ECC10A9E6B5848065A0027AD6D /* Pods-APFeedBack_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBack_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0D598C9BC333C22687A2667D63121DC6 /* Pods-APFeedBackSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APFeedBackSwift-dummy.m"; sourceTree = "<group>"; };
-		0D97A9861EF0940F1C08560785DA5B1C /* APFeedTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APFeedTableViewController.h; path = Pod/Classes/APFeedTableViewController.h; sourceTree = "<group>"; };
-		0DD24EE62E4660CDA9257292012148E4 /* APFeedTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APFeedTableViewController.m; path = Pod/Classes/APFeedTableViewController.m; sourceTree = "<group>"; };
-		0F0DB3269617AB6D280B69E305BEC47B /* Pods-APFeedBackSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBackSwift-resources.sh"; sourceTree = "<group>"; };
-		15B5D72CB8924F4BFADAED9F6E728DA6 /* APFeedBack-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "APFeedBack-framework.modulemap"; sourceTree = "<group>"; };
-		1B01CD0AD60FB1862A80A940BE1F7E3F /* APFeedBack-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "APFeedBack-library-dummy.m"; path = "../APFeedBack-library/APFeedBack-library-dummy.m"; sourceTree = "<group>"; };
-		29791574A8267EA16D9EA2486A3D872C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29DF401E342DE16AC785F1804F6B18A7 /* APFeedBack-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APFeedBack-framework-dummy.m"; sourceTree = "<group>"; };
-		2BF858CB63764BF55A1E10DCAD8A6989 /* Pods-APFeedBack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3B0DF7A457F6421B0D50C139D3F257A9 /* Pods_APFeedBackSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APFeedBackSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41B474270CB2F8D54CB137BF3E3F9543 /* libAPFeedBack-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAPFeedBack-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4543F90A65BF2A2B14272B3D854719A5 /* APFeedBack-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "APFeedBack-framework.xcconfig"; sourceTree = "<group>"; };
-		462F0F9AF9A613E500776C9D661F3098 /* Pods-APFeedBackSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBackSwift-frameworks.sh"; sourceTree = "<group>"; };
-		4906945F9D501F99F8D8B350C3A928FD /* Pods-APFeedBackSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-APFeedBackSwift.modulemap"; sourceTree = "<group>"; };
-		49C59F1F1026042176737B085160A686 /* Pods-APFeedBack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5561D9FB8BB2AA7AA5BBC77DF1A61119 /* Pods-APFeedBack_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APFeedBack_Example-dummy.m"; sourceTree = "<group>"; };
-		5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
-		5B175ABBECD9EE0E2013EBC5E22764F9 /* Pods-APFeedBack_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBack_Example-resources.sh"; sourceTree = "<group>"; };
-		6702B65E1CA2F92CF424F5E7D3D6DA1F /* libPods-APFeedBack_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APFeedBack_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F93B9C71CE67FD8E805814D95BBE2CB /* Pods-APFeedBackSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBackSwift-acknowledgements.plist"; sourceTree = "<group>"; };
-		779B02D031AC3554708CF1AB0DF58118 /* Pods-APFeedBack_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBack_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		797D8BC99D1A8D5BC43673FA1D59ED0D /* APFeedBack-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APFeedBack-library-prefix.pch"; path = "../APFeedBack-library/APFeedBack-library-prefix.pch"; sourceTree = "<group>"; };
-		80F38BA6308DF2DF9F741FF1083B3E7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8817345D13DAA2EEE03C34948B02C4B5 /* Pods-APFeedBack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.release.xcconfig"; sourceTree = "<group>"; };
-		89880FE1D6534A2CA1E9D2234D75FC2B /* APFeedBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APFeedBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		942F928C2735D2F83FE6DF1E93B9D82B /* DeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = Pod/Classes/DeviceInfo.h; sourceTree = "<group>"; };
-		9AA17FFC6DB023D078B7168380023867 /* Pods-APFeedBackSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBackSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A300EA49ABDC633DC0E6E65A1031752A /* Pods-APFeedBackSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBackSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		A57C0D7E1CAF94351DBFD9239D9ECD32 /* Pods-APFeedBackSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBackSwift.release.xcconfig"; sourceTree = "<group>"; };
-		AE1F74E365285F3270EE37B488BB4360 /* APFeedBack-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APFeedBack-framework-umbrella.h"; sourceTree = "<group>"; };
-		BA09A2DD3D68F5085CC752A3972E0D6B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Pod/Classes/Localizable.strings; sourceTree = "<group>"; };
-		C185261A30A5BA9102123335B6465D63 /* Pods-APFeedBackSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APFeedBackSwift-umbrella.h"; sourceTree = "<group>"; };
-		CA0E9429243F040FCE0AB06ACD775922 /* DeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeviceInfo.m; path = Pod/Classes/DeviceInfo.m; sourceTree = "<group>"; };
-		CF8201DAB53B675D1989CF1319744020 /* APFeedBackConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APFeedBackConfig.h; path = Pod/Classes/APFeedBackConfig.h; sourceTree = "<group>"; };
-		E1876553E026E455C67136AAD24516ED /* APFeedBack-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APFeedBack-framework-prefix.pch"; sourceTree = "<group>"; };
-		F98121F1E11DCF58594A537CCA30CC7B /* APFeedBack-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "APFeedBack-library.xcconfig"; path = "../APFeedBack-library/APFeedBack-library.xcconfig"; sourceTree = "<group>"; };
+		036202B3B645D5B5332F99B60B0234B1 /* Pods-APFeedBackSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APFeedBackSwift-dummy.m"; sourceTree = "<group>"; };
+		04D1CE6FCA5624A0A1DC232AB3BF3D67 /* Pods-APFeedBackSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBackSwift-Info.plist"; sourceTree = "<group>"; };
+		0A61215E09E686AA3C9645405DFFAC3D /* APFeedBack-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "APFeedBack-framework-Info.plist"; sourceTree = "<group>"; };
+		0F43C70A3A68D0E4D46B7AA0A5C7CC22 /* Pods-APFeedBackSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APFeedBackSwift-frameworks.sh"; sourceTree = "<group>"; };
+		0F4D0E7B55A4D806C1EAD31E58AEA9E7 /* libAPFeedBack-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAPFeedBack-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B448047C758524B2CC1AB40BB4D1F1 /* Pods-APFeedBackSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-APFeedBackSwift.modulemap"; sourceTree = "<group>"; };
+		1D6D234E4D391EC979F62FB14822E2C2 /* APFeedBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APFeedBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290957007D9437C7DDA7A5F86866C1A0 /* Pods-APFeedBackSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APFeedBackSwift-umbrella.h"; sourceTree = "<group>"; };
+		29A40A7531A4E2D8D5421E5AEB10DD6F /* APFeedBack-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "APFeedBack-library.debug.xcconfig"; path = "../APFeedBack-library/APFeedBack-library.debug.xcconfig"; sourceTree = "<group>"; };
+		2B74EF4ACC9EBB666043F750AFB367AE /* Pods-APFeedBackSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBackSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C19F2495F6534A7550C65C9D48A049F /* Pods-APFeedBack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APFeedBack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3984B34AC3F4F40C20DADA4A7E66C38D /* Pods-APFeedBack_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBack_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4988C3B7AA3BE115B3C1B5FF00FEA6ED /* APFeedBackConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APFeedBackConfig.h; path = Pod/Classes/APFeedBackConfig.h; sourceTree = "<group>"; };
+		4A568591268431B5250F45D041ED11C0 /* Pods-APFeedBackSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBackSwift.release.xcconfig"; sourceTree = "<group>"; };
+		4DAA16CCC1602D5C902B161A316B5280 /* DeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeviceInfo.m; path = Pod/Classes/DeviceInfo.m; sourceTree = "<group>"; };
+		5DC4A52ACF3498BD0BCB463381BC039C /* APFeedBack-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APFeedBack-library-prefix.pch"; path = "../APFeedBack-library/APFeedBack-library-prefix.pch"; sourceTree = "<group>"; };
+		7E3DF1E7D4674A905F0486A618ACAE43 /* APFeedBack-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "APFeedBack-framework.release.xcconfig"; sourceTree = "<group>"; };
+		846135A4ECEE3708B94F7C7744EF232A /* DeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = Pod/Classes/DeviceInfo.h; sourceTree = "<group>"; };
+		8695A77E52627B26BB82B537D581698F /* APFeedTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APFeedTableViewController.m; path = Pod/Classes/APFeedTableViewController.m; sourceTree = "<group>"; };
+		93BFD1E7211912A7D9DB547E2CD4CFD0 /* Pods-APFeedBack_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APFeedBack_Example-dummy.m"; sourceTree = "<group>"; };
+		9C7A1AD497709D0065969DD94077440C /* Pods-APFeedBackSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APFeedBackSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9926254743C633CFE2F5DED8B764B5F /* APFeedBack-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "APFeedBack-framework.modulemap"; sourceTree = "<group>"; };
+		AF833FE1508A8CA0E77C9C9A42F152FF /* APFeedBack-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "APFeedBack-library.release.xcconfig"; path = "../APFeedBack-library/APFeedBack-library.release.xcconfig"; sourceTree = "<group>"; };
+		B8607C08F0F01F74F1C013ABF761F1D5 /* Pods-APFeedBack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C0317F3CDA9F73973076295F19D3D971 /* APFeedBack-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APFeedBack-framework-dummy.m"; sourceTree = "<group>"; };
+		C6A9AB5BFEFC0768CA7EB145BBD67C84 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Pod/Classes/Localizable.strings; sourceTree = "<group>"; };
+		D0ACCC8F060648A4F20F71D6F81D0B32 /* Pods-APFeedBack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBack_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D0CADB733EF7A58EB9C2CCBE738075F2 /* Pods_APFeedBackSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APFeedBackSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8ABDD89C7D5B763561638364B129A59 /* APFeedBack-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "APFeedBack-library-dummy.m"; path = "../APFeedBack-library/APFeedBack-library-dummy.m"; sourceTree = "<group>"; };
+		DD6D2608A5F995BC5A5A321643B5A001 /* libPods-APFeedBack_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APFeedBack_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE18547F39A5CDDE03AEDB7F88A5460 /* APFeedTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APFeedTableViewController.h; path = Pod/Classes/APFeedTableViewController.h; sourceTree = "<group>"; };
+		EE6296CC292C9DEE8623716214D10468 /* APFeedBack-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APFeedBack-framework-umbrella.h"; sourceTree = "<group>"; };
+		EEBD0FD12C84C60FFBDB088F05A7AA6C /* APFeedBack-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "APFeedBack-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		FBC13E83E2044F7914E9246733FA2E75 /* APFeedBack-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APFeedBack-framework-prefix.pch"; sourceTree = "<group>"; };
+		FFFB6B494964BD7AF7EFAF7BB5FB7782 /* Pods-APFeedBackSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APFeedBackSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		653FA14894E71B0E5BCF9F1219F4F53A /* Frameworks */ = {
+		72E5117512E6DA43D7E4BFF07BDB01F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD277F17B5D0C286AC106103607D7EC1 /* Foundation.framework in Frameworks */,
-				AF023106E547B226605F649E9E1BB447 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67A5C7CEB9CD0AE9C261B6B1A5D8D648 /* Frameworks */ = {
+		91060869DE9B29771143B51F08139CEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF5E86BC3ACC3FA9DEB67DFDB04ADBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94C82771F8B2571D7706B0275D4B3B65 /* Frameworks */ = {
+		B4619A0A4A715EFC890B36C325B38C13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2255DD9C963D6587FCA066CD1FB2EB /* Foundation.framework in Frameworks */,
-				AA041B196638739B8B84F3F005ADBAC9 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B97D3A15B9ECC283244F868CCBD48FF4 /* Frameworks */ = {
+		B86E464C52919323BB361F4DDD2C1486 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15891DC21D58BB5531DF677FA70D4604 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A69B14A238F14802E7EA326EF10E66 /* Products */ = {
+		51622487D245C80D043332BFAAF6696D /* Pods-APFeedBack_Example */ = {
 			isa = PBXGroup;
 			children = (
-				89880FE1D6534A2CA1E9D2234D75FC2B /* APFeedBack.framework */,
-				41B474270CB2F8D54CB137BF3E3F9543 /* libAPFeedBack-library.a */,
-				6702B65E1CA2F92CF424F5E7D3D6DA1F /* libPods-APFeedBack_Example.a */,
-				3B0DF7A457F6421B0D50C139D3F257A9 /* Pods_APFeedBackSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		03E237D534F56AD7BABACAEF0D677F4A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2E8DD4101C60FD49911CB6041DE1FF9 /* Pods-APFeedBack_Example */,
-				17232C7C4C110241B61D1BF298A76A22 /* Pods-APFeedBackSwift */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		17232C7C4C110241B61D1BF298A76A22 /* Pods-APFeedBackSwift */ = {
-			isa = PBXGroup;
-			children = (
-				29791574A8267EA16D9EA2486A3D872C /* Info.plist */,
-				4906945F9D501F99F8D8B350C3A928FD /* Pods-APFeedBackSwift.modulemap */,
-				9AA17FFC6DB023D078B7168380023867 /* Pods-APFeedBackSwift-acknowledgements.markdown */,
-				6F93B9C71CE67FD8E805814D95BBE2CB /* Pods-APFeedBackSwift-acknowledgements.plist */,
-				0D598C9BC333C22687A2667D63121DC6 /* Pods-APFeedBackSwift-dummy.m */,
-				462F0F9AF9A613E500776C9D661F3098 /* Pods-APFeedBackSwift-frameworks.sh */,
-				0F0DB3269617AB6D280B69E305BEC47B /* Pods-APFeedBackSwift-resources.sh */,
-				C185261A30A5BA9102123335B6465D63 /* Pods-APFeedBackSwift-umbrella.h */,
-				A300EA49ABDC633DC0E6E65A1031752A /* Pods-APFeedBackSwift.debug.xcconfig */,
-				A57C0D7E1CAF94351DBFD9239D9ECD32 /* Pods-APFeedBackSwift.release.xcconfig */,
-			);
-			name = "Pods-APFeedBackSwift";
-			path = "Target Support Files/Pods-APFeedBackSwift";
-			sourceTree = "<group>";
-		};
-		24E961953416E2668FD91D6B00A59FE8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				78F03A334AD9D7752DB1B214C5D5FE67 /* APFeedBack */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5235844FE4661EEE40F3333D962C897F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5235844FE4661EEE40F3333D962C897F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */,
-				5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		78F03A334AD9D7752DB1B214C5D5FE67 /* APFeedBack */ = {
-			isa = PBXGroup;
-			children = (
-				CF8201DAB53B675D1989CF1319744020 /* APFeedBackConfig.h */,
-				0D97A9861EF0940F1C08560785DA5B1C /* APFeedTableViewController.h */,
-				0DD24EE62E4660CDA9257292012148E4 /* APFeedTableViewController.m */,
-				942F928C2735D2F83FE6DF1E93B9D82B /* DeviceInfo.h */,
-				CA0E9429243F040FCE0AB06ACD775922 /* DeviceInfo.m */,
-				BA09A2DD3D68F5085CC752A3972E0D6B /* Localizable.strings */,
-				E91B8D667C2890EF49D5A7B7460BC554 /* Support Files */,
-			);
-			path = APFeedBack;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				24E961953416E2668FD91D6B00A59FE8 /* Pods */,
-				02A69B14A238F14802E7EA326EF10E66 /* Products */,
-				03E237D534F56AD7BABACAEF0D677F4A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C2E8DD4101C60FD49911CB6041DE1FF9 /* Pods-APFeedBack_Example */ = {
-			isa = PBXGroup;
-			children = (
-				779B02D031AC3554708CF1AB0DF58118 /* Pods-APFeedBack_Example-acknowledgements.markdown */,
-				49C59F1F1026042176737B085160A686 /* Pods-APFeedBack_Example-acknowledgements.plist */,
-				5561D9FB8BB2AA7AA5BBC77DF1A61119 /* Pods-APFeedBack_Example-dummy.m */,
-				01B585ECC10A9E6B5848065A0027AD6D /* Pods-APFeedBack_Example-frameworks.sh */,
-				5B175ABBECD9EE0E2013EBC5E22764F9 /* Pods-APFeedBack_Example-resources.sh */,
-				2BF858CB63764BF55A1E10DCAD8A6989 /* Pods-APFeedBack_Example.debug.xcconfig */,
-				8817345D13DAA2EEE03C34948B02C4B5 /* Pods-APFeedBack_Example.release.xcconfig */,
+				3984B34AC3F4F40C20DADA4A7E66C38D /* Pods-APFeedBack_Example-acknowledgements.markdown */,
+				2C19F2495F6534A7550C65C9D48A049F /* Pods-APFeedBack_Example-acknowledgements.plist */,
+				93BFD1E7211912A7D9DB547E2CD4CFD0 /* Pods-APFeedBack_Example-dummy.m */,
+				B8607C08F0F01F74F1C013ABF761F1D5 /* Pods-APFeedBack_Example.debug.xcconfig */,
+				D0ACCC8F060648A4F20F71D6F81D0B32 /* Pods-APFeedBack_Example.release.xcconfig */,
 			);
 			name = "Pods-APFeedBack_Example";
 			path = "Target Support Files/Pods-APFeedBack_Example";
 			sourceTree = "<group>";
 		};
-		E91B8D667C2890EF49D5A7B7460BC554 /* Support Files */ = {
+		7DF0BA53FFC5814C76F1DDEC63C569FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15B5D72CB8924F4BFADAED9F6E728DA6 /* APFeedBack-framework.modulemap */,
-				4543F90A65BF2A2B14272B3D854719A5 /* APFeedBack-framework.xcconfig */,
-				29DF401E342DE16AC785F1804F6B18A7 /* APFeedBack-framework-dummy.m */,
-				E1876553E026E455C67136AAD24516ED /* APFeedBack-framework-prefix.pch */,
-				AE1F74E365285F3270EE37B488BB4360 /* APFeedBack-framework-umbrella.h */,
-				F98121F1E11DCF58594A537CCA30CC7B /* APFeedBack-library.xcconfig */,
-				1B01CD0AD60FB1862A80A940BE1F7E3F /* APFeedBack-library-dummy.m */,
-				797D8BC99D1A8D5BC43673FA1D59ED0D /* APFeedBack-library-prefix.pch */,
-				80F38BA6308DF2DF9F741FF1083B3E7F /* Info.plist */,
+				1D6D234E4D391EC979F62FB14822E2C2 /* APFeedBack.framework */,
+				0F4D0E7B55A4D806C1EAD31E58AEA9E7 /* libAPFeedBack-library.a */,
+				DD6D2608A5F995BC5A5A321643B5A001 /* libPods-APFeedBack_Example.a */,
+				D0CADB733EF7A58EB9C2CCBE738075F2 /* Pods_APFeedBackSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D30CD9ADDD8AF5153E37E1EE3B5497D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9926254743C633CFE2F5DED8B764B5F /* APFeedBack-framework.modulemap */,
+				C0317F3CDA9F73973076295F19D3D971 /* APFeedBack-framework-dummy.m */,
+				0A61215E09E686AA3C9645405DFFAC3D /* APFeedBack-framework-Info.plist */,
+				FBC13E83E2044F7914E9246733FA2E75 /* APFeedBack-framework-prefix.pch */,
+				EE6296CC292C9DEE8623716214D10468 /* APFeedBack-framework-umbrella.h */,
+				EEBD0FD12C84C60FFBDB088F05A7AA6C /* APFeedBack-framework.debug.xcconfig */,
+				7E3DF1E7D4674A905F0486A618ACAE43 /* APFeedBack-framework.release.xcconfig */,
+				D8ABDD89C7D5B763561638364B129A59 /* APFeedBack-library-dummy.m */,
+				5DC4A52ACF3498BD0BCB463381BC039C /* APFeedBack-library-prefix.pch */,
+				29A40A7531A4E2D8D5421E5AEB10DD6F /* APFeedBack-library.debug.xcconfig */,
+				AF833FE1508A8CA0E77C9C9A42F152FF /* APFeedBack-library.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/APFeedBack-framework";
 			sourceTree = "<group>";
 		};
+		A6FB65851129906310DE80F76F5C2FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6F923EA7332EFA6C3AC2ED6A8879105 /* APFeedBack */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7116E9E7D00C4B8AA7198ADFFDCC1A9 /* Pods-APFeedBackSwift */ = {
+			isa = PBXGroup;
+			children = (
+				11B448047C758524B2CC1AB40BB4D1F1 /* Pods-APFeedBackSwift.modulemap */,
+				9C7A1AD497709D0065969DD94077440C /* Pods-APFeedBackSwift-acknowledgements.markdown */,
+				2B74EF4ACC9EBB666043F750AFB367AE /* Pods-APFeedBackSwift-acknowledgements.plist */,
+				036202B3B645D5B5332F99B60B0234B1 /* Pods-APFeedBackSwift-dummy.m */,
+				0F43C70A3A68D0E4D46B7AA0A5C7CC22 /* Pods-APFeedBackSwift-frameworks.sh */,
+				04D1CE6FCA5624A0A1DC232AB3BF3D67 /* Pods-APFeedBackSwift-Info.plist */,
+				290957007D9437C7DDA7A5F86866C1A0 /* Pods-APFeedBackSwift-umbrella.h */,
+				FFFB6B494964BD7AF7EFAF7BB5FB7782 /* Pods-APFeedBackSwift.debug.xcconfig */,
+				4A568591268431B5250F45D041ED11C0 /* Pods-APFeedBackSwift.release.xcconfig */,
+			);
+			name = "Pods-APFeedBackSwift";
+			path = "Target Support Files/Pods-APFeedBackSwift";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A6FB65851129906310DE80F76F5C2FA5 /* Pods */,
+				7DF0BA53FFC5814C76F1DDEC63C569FB /* Products */,
+				DC836467EC621BF2566A268D985EDEE3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DC836467EC621BF2566A268D985EDEE3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51622487D245C80D043332BFAAF6696D /* Pods-APFeedBack_Example */,
+				B7116E9E7D00C4B8AA7198ADFFDCC1A9 /* Pods-APFeedBackSwift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6F923EA7332EFA6C3AC2ED6A8879105 /* APFeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				4988C3B7AA3BE115B3C1B5FF00FEA6ED /* APFeedBackConfig.h */,
+				EDE18547F39A5CDDE03AEDB7F88A5460 /* APFeedTableViewController.h */,
+				8695A77E52627B26BB82B537D581698F /* APFeedTableViewController.m */,
+				846135A4ECEE3708B94F7C7744EF232A /* DeviceInfo.h */,
+				4DAA16CCC1602D5C902B161A316B5280 /* DeviceInfo.m */,
+				C6A9AB5BFEFC0768CA7EB145BBD67C84 /* Localizable.strings */,
+				8D30CD9ADDD8AF5153E37E1EE3B5497D /* Support Files */,
+			);
+			path = APFeedBack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0449FE084F95612710B15C60E9BB70D9 /* Headers */ = {
+		552738515F76266BB8244A6150BE629A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4053AAF651518A3BACD35ACE4C13B3A4 /* APFeedBack-framework-umbrella.h in Headers */,
-				48DF204C784263E1AFBD90AFFA7DD6E7 /* APFeedBackConfig.h in Headers */,
-				6E4E76DC9441AA409EFB60B3BD03619A /* APFeedTableViewController.h in Headers */,
-				3F431CD2D61ABD06DECD2EC9550F90D7 /* DeviceInfo.h in Headers */,
+				CF0B808A91C96F4225A30E9EF7BB36BF /* APFeedBackConfig.h in Headers */,
+				9B1189328B97B62F871D359A889316D6 /* APFeedTableViewController.h in Headers */,
+				34938918676D6154390EBFFFE9AAA5EA /* DeviceInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0C95B5CBE924D8EA5A6FD3559F6C926 /* Headers */ = {
+		69C89008B41D55854FFD04D518F6ED85 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AB5E1BC85C67C6551956A870A5FB70A /* APFeedBackConfig.h in Headers */,
-				9A6D1824BE61C98AC79D083DFB4B7DF4 /* APFeedTableViewController.h in Headers */,
-				004317229D9F84F83671B5F446B20D86 /* DeviceInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F65D66136CA58344EFD4F6861052C88D /* Headers */ = {
+		B2EC626917D5F339F20CB28782A9FEF5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625F0C291C1910FB3D13E62C07E082D0 /* Pods-APFeedBackSwift-umbrella.h in Headers */,
+				5C3137A9B2EC6D326C6C761C5018B589 /* Pods-APFeedBackSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5976C492DBF96B1B565270441F90B5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978361ECAB22096F9ABF9543BEF74525 /* APFeedBack-framework-umbrella.h in Headers */,
+				28B37C2069D74A66565F1DD764CE32A3 /* APFeedBackConfig.h in Headers */,
+				BD51C088C3355872C59CCF60644912B9 /* APFeedTableViewController.h in Headers */,
+				C7C1EE8DAC5C20E389C950B319E42FDD /* DeviceInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		51C1D05AC46062C61AA171528544BF21 /* Pods-APFeedBackSwift */ = {
+		6EFFCEB8E83EBAB9A3FA76D9B9BA38F8 /* Pods-APFeedBackSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B8673E66AF0AF750B759E3A8599943A /* Build configuration list for PBXNativeTarget "Pods-APFeedBackSwift" */;
+			buildConfigurationList = 2545711EA78087DCE12EE82D3C88D7C5 /* Build configuration list for PBXNativeTarget "Pods-APFeedBackSwift" */;
 			buildPhases = (
-				2D6A90F9F6A732293C7CFB032006B5E2 /* Sources */,
-				B97D3A15B9ECC283244F868CCBD48FF4 /* Frameworks */,
-				F65D66136CA58344EFD4F6861052C88D /* Headers */,
+				B2EC626917D5F339F20CB28782A9FEF5 /* Headers */,
+				97896739CA7AE1585519C269EDC1B4B0 /* Sources */,
+				B86E464C52919323BB361F4DDD2C1486 /* Frameworks */,
+				BD87F2212DF06ED245A3AF5765568A60 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A6C2C4BB2268E0BA245DCB13CBE36808 /* PBXTargetDependency */,
+				00B50763C54F610886A7B3BC7FC8C145 /* PBXTargetDependency */,
 			);
 			name = "Pods-APFeedBackSwift";
-			productName = "Pods-APFeedBackSwift";
-			productReference = 3B0DF7A457F6421B0D50C139D3F257A9 /* Pods_APFeedBackSwift.framework */;
+			productName = Pods_APFeedBackSwift;
+			productReference = D0CADB733EF7A58EB9C2CCBE738075F2 /* Pods_APFeedBackSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8AB0ED70E2CFEC07EAA56DC01340A4EA /* Pods-APFeedBack_Example */ = {
+		A9FABBBFAD2644FF9EBE795B94414EE6 /* APFeedBack-library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F78D5F24F45B8A8F1F3D3CA747F14689 /* Build configuration list for PBXNativeTarget "Pods-APFeedBack_Example" */;
+			buildConfigurationList = 94256ADDD4DF0060A306C8DFBD2F33B0 /* Build configuration list for PBXNativeTarget "APFeedBack-library" */;
 			buildPhases = (
-				56F9FC0160F36CC3FF4F07336098D164 /* Sources */,
-				67A5C7CEB9CD0AE9C261B6B1A5D8D648 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				559BE6DC59D05B356AE55D68CA25A10A /* PBXTargetDependency */,
-			);
-			name = "Pods-APFeedBack_Example";
-			productName = "Pods-APFeedBack_Example";
-			productReference = 6702B65E1CA2F92CF424F5E7D3D6DA1F /* libPods-APFeedBack_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8D0AA43C9E75F71D50222B80F843F221 /* APFeedBack-framework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E9268630D0FEA2F8A7F2CE59A17F179 /* Build configuration list for PBXNativeTarget "APFeedBack-framework" */;
-			buildPhases = (
-				64F3501C372CC564B0D89C3DCB572A1E /* Sources */,
-				94C82771F8B2571D7706B0275D4B3B65 /* Frameworks */,
-				0449FE084F95612710B15C60E9BB70D9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "APFeedBack-framework";
-			productName = "APFeedBack-framework";
-			productReference = 89880FE1D6534A2CA1E9D2234D75FC2B /* APFeedBack.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A02059144CFFE574FA148643BD066148 /* APFeedBack-library */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA860BD0E3870D4AF93882AD564746DC /* Build configuration list for PBXNativeTarget "APFeedBack-library" */;
-			buildPhases = (
-				4E862839E3238B4B3902063478B8F479 /* Sources */,
-				653FA14894E71B0E5BCF9F1219F4F53A /* Frameworks */,
-				F0C95B5CBE924D8EA5A6FD3559F6C926 /* Headers */,
+				552738515F76266BB8244A6150BE629A /* Headers */,
+				2FB6E1BB06BC2BC93201A140154680EF /* Sources */,
+				91060869DE9B29771143B51F08139CEA /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,123 +291,153 @@
 			);
 			name = "APFeedBack-library";
 			productName = "APFeedBack-library";
-			productReference = 41B474270CB2F8D54CB137BF3E3F9543 /* libAPFeedBack-library.a */;
+			productReference = 0F4D0E7B55A4D806C1EAD31E58AEA9E7 /* libAPFeedBack-library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B17897D79403A1E619F81C005D9A9C0F /* APFeedBack-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907DE23DD0D8063113819E1795772C2A /* Build configuration list for PBXNativeTarget "APFeedBack-framework" */;
+			buildPhases = (
+				E5976C492DBF96B1B565270441F90B5D /* Headers */,
+				9DBB5CD17E21115D13BEC2790FA6224A /* Sources */,
+				72E5117512E6DA43D7E4BFF07BDB01F2 /* Frameworks */,
+				6FEB9C05ED9F1385A47B369D7EBDE4D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APFeedBack-framework";
+			productName = APFeedBack;
+			productReference = 1D6D234E4D391EC979F62FB14822E2C2 /* APFeedBack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0B5B4F800A372BD4D5E4A038F8652EF /* Pods-APFeedBack_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DB411FCD547835186AA5B537232E34 /* Build configuration list for PBXNativeTarget "Pods-APFeedBack_Example" */;
+			buildPhases = (
+				69C89008B41D55854FFD04D518F6ED85 /* Headers */,
+				F4D9312E50DD0D13FC0C083A998D5408 /* Sources */,
+				B4619A0A4A715EFC890B36C325B38C13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC80E1F6928C3B4B34564CD1EC7DF9D7 /* PBXTargetDependency */,
+			);
+			name = "Pods-APFeedBack_Example";
+			productName = "Pods-APFeedBack_Example";
+			productReference = DD6D2608A5F995BC5A5A321643B5A001 /* libPods-APFeedBack_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1130;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 02A69B14A238F14802E7EA326EF10E66 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7DF0BA53FFC5814C76F1DDEC63C569FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D0AA43C9E75F71D50222B80F843F221 /* APFeedBack-framework */,
-				A02059144CFFE574FA148643BD066148 /* APFeedBack-library */,
-				8AB0ED70E2CFEC07EAA56DC01340A4EA /* Pods-APFeedBack_Example */,
-				51C1D05AC46062C61AA171528544BF21 /* Pods-APFeedBackSwift */,
+				B17897D79403A1E619F81C005D9A9C0F /* APFeedBack-framework */,
+				A9FABBBFAD2644FF9EBE795B94414EE6 /* APFeedBack-library */,
+				F0B5B4F800A372BD4D5E4A038F8652EF /* Pods-APFeedBack_Example */,
+				6EFFCEB8E83EBAB9A3FA76D9B9BA38F8 /* Pods-APFeedBackSwift */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6FEB9C05ED9F1385A47B369D7EBDE4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD87F2212DF06ED245A3AF5765568A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2D6A90F9F6A732293C7CFB032006B5E2 /* Sources */ = {
+		2FB6E1BB06BC2BC93201A140154680EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4D4DA9484DB8EC4D2356DD2F10A5CAB /* Pods-APFeedBackSwift-dummy.m in Sources */,
+				3C495B4987FB51A910FE3669B9924A1A /* APFeedBack-library-dummy.m in Sources */,
+				43B729370CE89B5C500BFC26FA488D34 /* APFeedTableViewController.m in Sources */,
+				733039076709D04C4143155CC5A67630 /* DeviceInfo.m in Sources */,
+				2EC57C6EB4E563691182F242E1475874 /* Localizable.strings in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E862839E3238B4B3902063478B8F479 /* Sources */ = {
+		97896739CA7AE1585519C269EDC1B4B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				331DE76365E884F8358D3B6219D4A383 /* APFeedBack-library-dummy.m in Sources */,
-				18A571D6C4A465BE23ABF8561A146071 /* APFeedTableViewController.m in Sources */,
-				04C3556BC811968BE7CA9622B607622C /* DeviceInfo.m in Sources */,
-				32E83EB880350C0ADE913F1FE8A3F967 /* Localizable.strings in Sources */,
+				54C1B7A8219A6DE940255B8CDA18F5B6 /* Pods-APFeedBackSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56F9FC0160F36CC3FF4F07336098D164 /* Sources */ = {
+		9DBB5CD17E21115D13BEC2790FA6224A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D656150447D692281D0057185DE2065 /* Pods-APFeedBack_Example-dummy.m in Sources */,
+				2E054151469C2D41D35B1ACD45B1DD85 /* APFeedBack-framework-dummy.m in Sources */,
+				8273E7AE44824892B1DA8C79F3DB6C70 /* APFeedTableViewController.m in Sources */,
+				FE541E9FC6D737CDECEA14BB444E36D3 /* DeviceInfo.m in Sources */,
+				7297E971428F553CEFB0CD995EDEC155 /* Localizable.strings in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64F3501C372CC564B0D89C3DCB572A1E /* Sources */ = {
+		F4D9312E50DD0D13FC0C083A998D5408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4072CF6A5D7D288043A20D74B88044A5 /* APFeedBack-framework-dummy.m in Sources */,
-				D7B415553739DA9A2FF81CB488575EEB /* APFeedTableViewController.m in Sources */,
-				614C74B9A9BB56CD2218873C99B471A7 /* DeviceInfo.m in Sources */,
-				E7B65CCBFDEB0511897199F633A15666 /* Localizable.strings in Sources */,
+				52ADDB5E35757D03AA5DE1CAC8630878 /* Pods-APFeedBack_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		559BE6DC59D05B356AE55D68CA25A10A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "APFeedBack-library";
-			target = A02059144CFFE574FA148643BD066148 /* APFeedBack-library */;
-			targetProxy = B5BF9A300498F5E532A19D7EFFC99D06 /* PBXContainerItemProxy */;
-		};
-		A6C2C4BB2268E0BA245DCB13CBE36808 /* PBXTargetDependency */ = {
+		00B50763C54F610886A7B3BC7FC8C145 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "APFeedBack-framework";
-			target = 8D0AA43C9E75F71D50222B80F843F221 /* APFeedBack-framework */;
-			targetProxy = E6C8585728D4AFB18728718E44046E1A /* PBXContainerItemProxy */;
+			target = B17897D79403A1E619F81C005D9A9C0F /* APFeedBack-framework */;
+			targetProxy = 4E360C678FA713210EF5BA3CDE243898 /* PBXContainerItemProxy */;
+		};
+		AC80E1F6928C3B4B34564CD1EC7DF9D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "APFeedBack-library";
+			target = A9FABBBFAD2644FF9EBE795B94414EE6 /* APFeedBack-library */;
+			targetProxy = 1A9D4ABFFEF132DF12D720CCD90643EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04945AC209892A43DCB50374092755C3 /* Release */ = {
+		09F22315330D07FDCA95380D12B19AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F98121F1E11DCF58594A537CCA30CC7B /* APFeedBack-library.xcconfig */;
+			baseConfigurationReference = EEBD0FD12C84C60FFBDB088F05A7AA6C /* APFeedBack-framework.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-library/APFeedBack-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2EDF6DE148706BBED0CD270FA9999580 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A57C0D7E1CAF94351DBFD9239D9ECD32 /* Pods-APFeedBackSwift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -476,19 +446,64 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APFeedBackSwift/Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-framework/APFeedBack-framework-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APFeedBackSwift;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework.modulemap";
+				PRODUCT_MODULE_NAME = APFeedBack;
+				PRODUCT_NAME = APFeedBack;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		188F20E732E0DCDC1F230231A358DA5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3DF1E7D4674A905F0486A618ACAE43 /* APFeedBack-framework.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-framework/APFeedBack-framework-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework.modulemap";
+				PRODUCT_MODULE_NAME = APFeedBack;
+				PRODUCT_NAME = APFeedBack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -496,7 +511,29 @@
 			};
 			name = Release;
 		};
-		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+		5A728E412C8970CE8ECF11B84DDB62E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8607C08F0F01F74F1C013ABF761F1D5 /* Pods-APFeedBack_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -507,6 +544,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -522,13 +560,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -545,20 +583,50 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		C10856A173CD79163CCAEFBF9AE4ACB7 /* Debug */ = {
+		ACB7F589D3AF92C85C44DF31896A131B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4543F90A65BF2A2B14272B3D854719A5 /* APFeedBack-framework.xcconfig */;
+			baseConfigurationReference = AF833FE1508A8CA0E77C9C9A42F152FF /* APFeedBack-library.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-library/APFeedBack-library-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = APFeedBack;
+				PRODUCT_NAME = "APFeedBack-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2E5D853AF0AF5F41F37465DB5B21C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFB6B494964BD7AF7EFAF7BB5FB7782 /* Pods-APFeedBackSwift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -567,86 +635,97 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-framework/APFeedBack-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/APFeedBack-framework/Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework.modulemap";
-				PRODUCT_NAME = APFeedBack;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D10FF77436877CF899CB875A77B10F87 /* Debug */ = {
+		D055353D5B39A5D8F701F14191FBD332 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BF858CB63764BF55A1E10DCAD8A6989 /* Pods-APFeedBack_Example.debug.xcconfig */;
+			baseConfigurationReference = 4A568591268431B5250F45D041ED11C0 /* Pods-APFeedBackSwift.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D503640CFA1009451FE0480F84220419 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8817345D13DAA2EEE03C34948B02C4B5 /* Pods-APFeedBack_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		D6C865D9C23F2B7492D58863123CE874 /* Debug */ = {
+		D171967116CA6AA4F7941441EDABC9F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F98121F1E11DCF58594A537CCA30CC7B /* APFeedBack-library.xcconfig */;
+			baseConfigurationReference = 29A40A7531A4E2D8D5421E5AEB10DD6F /* APFeedBack-library.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-library/APFeedBack-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = APFeedBack;
+				PRODUCT_NAME = "APFeedBack-library";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -657,6 +736,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -672,13 +752,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -698,129 +778,91 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		E5695BDEF44E084C695B01EF8F365B87 /* Debug */ = {
+		FB8D9CAA66C04A5696712DDBFB5B7B48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A300EA49ABDC633DC0E6E65A1031752A /* Pods-APFeedBackSwift.debug.xcconfig */;
+			baseConfigurationReference = D0ACCC8F060648A4F20F71D6F81D0B32 /* Pods-APFeedBack_Example.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-APFeedBackSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-APFeedBackSwift/Pods-APFeedBackSwift.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APFeedBackSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E5CE256896D0F2B086BB3C79EAB61C0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4543F90A65BF2A2B14272B3D854719A5 /* APFeedBack-framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/APFeedBack-framework/APFeedBack-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/APFeedBack-framework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/APFeedBack-framework/APFeedBack-framework.modulemap";
-				PRODUCT_NAME = APFeedBack;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		2545711EA78087DCE12EE82D3C88D7C5 /* Build configuration list for PBXNativeTarget "Pods-APFeedBackSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+				B2E5D853AF0AF5F41F37465DB5B21C25 /* Debug */,
+				D055353D5B39A5D8F701F14191FBD332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E9268630D0FEA2F8A7F2CE59A17F179 /* Build configuration list for PBXNativeTarget "APFeedBack-framework" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C10856A173CD79163CCAEFBF9AE4ACB7 /* Debug */,
-				E5CE256896D0F2B086BB3C79EAB61C0C /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B8673E66AF0AF750B759E3A8599943A /* Build configuration list for PBXNativeTarget "Pods-APFeedBackSwift" */ = {
+		74DB411FCD547835186AA5B537232E34 /* Build configuration list for PBXNativeTarget "Pods-APFeedBack_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5695BDEF44E084C695B01EF8F365B87 /* Debug */,
-				2EDF6DE148706BBED0CD270FA9999580 /* Release */,
+				5A728E412C8970CE8ECF11B84DDB62E7 /* Debug */,
+				FB8D9CAA66C04A5696712DDBFB5B7B48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F78D5F24F45B8A8F1F3D3CA747F14689 /* Build configuration list for PBXNativeTarget "Pods-APFeedBack_Example" */ = {
+		907DE23DD0D8063113819E1795772C2A /* Build configuration list for PBXNativeTarget "APFeedBack-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D10FF77436877CF899CB875A77B10F87 /* Debug */,
-				D503640CFA1009451FE0480F84220419 /* Release */,
+				09F22315330D07FDCA95380D12B19AA0 /* Debug */,
+				188F20E732E0DCDC1F230231A358DA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA860BD0E3870D4AF93882AD564746DC /* Build configuration list for PBXNativeTarget "APFeedBack-library" */ = {
+		94256ADDD4DF0060A306C8DFBD2F33B0 /* Build configuration list for PBXNativeTarget "APFeedBack-library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6C865D9C23F2B7492D58863123CE874 /* Debug */,
-				04945AC209892A43DCB50374092755C3 /* Release */,
+				D171967116CA6AA4F7941441EDABC9F6 /* Debug */,
+				ACB7F589D3AF92C85C44DF31896A131B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

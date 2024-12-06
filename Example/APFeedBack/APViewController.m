@@ -8,6 +8,7 @@
 
 #import "APViewController.h"
 #import <APFeedBack/APFeedTableViewController.h>
+#import <APFeedBack/APFeedBackConfig.h>
 
 @interface APViewController ()
 
