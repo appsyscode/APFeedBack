@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "APFeedBack"
-  s.version          = "0.1.1"
+  s.version          = "0.1.4"
   s.summary          = "APFeedBack Library"
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Feedback to send iOS enabled developer NSLog file create .txt
   s.source           = { :git => "https://github.com/appsyscode/APFeedBack.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/appsyscode'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '15.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/*'

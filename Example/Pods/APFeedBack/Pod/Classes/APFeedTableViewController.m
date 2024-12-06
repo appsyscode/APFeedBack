@@ -32,7 +32,6 @@
 @property NSString *selectedtopicstr;
 
 @property (nonatomic, strong) UITextView *textV;
-@property (nonatomic, strong) UIPopoverController *popoverController;
 @property (weak, nonatomic) UIImage *attachimage;
 
 @property NSString *appVersionstr;
@@ -52,12 +51,15 @@
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:UITableViewStyleInsetGrouped];
+    if (@available(iOS 13.0, *)) {
+        self = [super initWithStyle:UITableViewStyleInsetGrouped];
+    } else {
+        // Fallback on earlier versions
+        self = [super initWithStyle:UITableViewStyleGrouped];
+    }
     
     if (self)
     {
-    // self.mailHTML = YES;
-    // self.developer_LogFile =YES;
     }
     return self;
 }
@@ -152,11 +154,11 @@
 {
     
     if (section == 0) {
-        return 2;//[self.Items1 count];
+        return [self.Items1 count];
         
     }
     else if (section == 1) {
-        return 2;//[self.Items2 count];
+        return [self.Items2 count];
         
     }
     else if (section == 2) {
@@ -202,7 +204,6 @@
     bgColorView.backgroundColor = SelectedColor;
     bgColorView.layer.masksToBounds = YES;
     cell.selectedBackgroundView = bgColorView;
-    self.tableView.rowHeight=cellRow;
     
     cell.backgroundColor=TableviewCell_Color;
     
@@ -220,6 +221,8 @@
             cell.textLabel.textColor = celltextLabelColor;
             cell.detailTextLabel.textColor = celldetailtextLabelColor;
             cell.accessoryView = nil;
+            cell.imageView.image = nil;
+            
             
         }
         else if (indexPath.row==1)
@@ -238,7 +241,6 @@
             self.textV.text = [NSString stringWithFormat:@"%@",[defaults objectForKey:FeedBackText_Key]];
             
             [cell.contentView addSubview:self.textV];
-            self.tableView.rowHeight=cellRowTextView;
             cell.accessoryView =nil;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
@@ -316,6 +318,25 @@
     }
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            return 45.0;
+        } else {
+            return 100.0;
+        }
+    }
+    else if (indexPath.section == 1) {
+        return 45.0;
+    }
+    else if (indexPath.section == 2) {
+        return 44.0;
+    }
+    
+    return 44.0; // Minden más szekció alapértelmezett magasság
 }
 
 
@@ -440,10 +461,9 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         
         [self presentViewController:alertController animated:YES completion:nil];
+
         
     });
-    
-    
 
 }
 // ---------------------------------------------------------------------------------------------------------------
@@ -498,53 +518,41 @@
 #pragma mark UIAlertControllerStyleActionSheet Style Alerts
 // ---------------------------------------------------------------------------------------------------------------
 
-- (void)picture_attachment:(NSIndexPath *)selectedPath  {
-    
-    
-    
+- (void)picture_attachment:(NSIndexPath *)selectedPath {
     NSString *cameratitle = NSLocalizedString(@"AP_Camera", nil);
     NSString *photolibrarytitle = NSLocalizedString(@"AP_PhotoLibrary", nil);
     NSString *cancelButtonTitle = NSLocalizedString(@"AP_Cancel", nil);
-    
+
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    
-   
+
     UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:cameratitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        
-        if([self isCameraAvailable]) {
-            
+        if ([self isCameraAvailable]) {
             sourceType = UIImagePickerControllerSourceTypeCamera;
         }
-        
         [self createImagePickerControllerWithSourceType:sourceType];
-        
     }];
-    
+
     UIAlertAction *libraryAction = [UIAlertAction actionWithTitle:photolibrarytitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
-         UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        
-          [self createImagePickerControllerWithSourceType:sourceType];
+        UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        [self createImagePickerControllerWithSourceType:sourceType];
     }];
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-      
-    }];
-    
-    
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:nil];
+
     [alertController addAction:cancelAction];
     [alertController addAction:libraryAction];
     [alertController addAction:cameraAction];
-    
-   
-    UIPopoverPresentationController *popoverPresentationController = [alertController popoverPresentationController];
-    if (popoverPresentationController) {
+
+    // UIPopoverPresentationController for iPad
+    if ([alertController popoverPresentationController]) {
         UITableViewCell *selectedCell = [self.tableView cellForRowAtIndexPath:selectedPath];
-        popoverPresentationController.sourceRect = selectedCell.frame;
+        UIPopoverPresentationController *popoverPresentationController = [alertController popoverPresentationController];
         popoverPresentationController.sourceView = self.view;
+        popoverPresentationController.sourceRect = selectedCell.frame;
         popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionUp;
     }
-    
+
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
@@ -554,27 +562,31 @@
 #pragma mark UIImagePickerController
 // ---------------------------------------------------------------------------------------------------------------
 
-- (void)createImagePickerControllerWithSourceType:(UIImagePickerControllerSourceType)sourceType{
+- (void)createImagePickerControllerWithSourceType:(UIImagePickerControllerSourceType)sourceType {
     
     UIImagePickerController *controller = [[UIImagePickerController alloc] init];
     controller.sourceType = sourceType;
     controller.allowsEditing = YES;
     controller.delegate = self;
     
+    // Ha iPad-es eszközt használunk
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-        if ([UIPopoverPresentationController class]) {
-            controller.modalPresentationStyle = UIModalPresentationFormSheet;
-            
-            UIPopoverPresentationController *presentationController = [controller popoverPresentationController];
-            presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
-            presentationController.sourceView = self.view;
-            presentationController.sourceRect = self.view.frame;
-            
-            [self presentViewController:controller animated:YES completion:nil];
-        } else {
-            self.popoverController = [[UIPopoverController alloc] initWithContentViewController:controller];
-            [self.popoverController presentPopoverFromRect:self.view.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-        }
+        controller.modalPresentationStyle = UIModalPresentationPopover;
+        
+        // UIPopoverPresentationController használata
+        UIPopoverPresentationController *popoverPresentationController = [controller popoverPresentationController];
+        popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        popoverPresentationController.sourceView = self.view;
+        
+        // Középre helyezzük a popovert
+        CGSize screenSize = [UIScreen mainScreen].bounds.size;
+        CGFloat x = screenSize.width / 2;
+        CGFloat y = screenSize.height / 2;
+        
+        popoverPresentationController.sourceRect = CGRectMake(x, y, 1, 1); // 1x1 méret, mivel a popover középen kell megjelenjen
+        popoverPresentationController.sourceView = self.view;
+        
+        [self presentViewController:controller animated:YES completion:nil];
     } else {
         [self presentViewController:controller animated:YES completion:nil];
     }
@@ -583,36 +595,32 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
-    if (image == nil){
+    if (image == nil) {
         image = [info objectForKey:UIImagePickerControllerOriginalImage];
-        
     }
     self.attachimage = image;
- 
+    
     NSData *imageData = UIImageJPEGRepresentation(self.attachimage, 1);
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:imageData forKey:ImageMail_key];
     [defaults synchronize];
     
-    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad && ![UIPopoverPresentationController class]) {
-        [self.popoverController dismissPopoverAnimated:YES];
-      
+    // Ha iPad-en vagyunk, egyszerűen zárjuk be a képet tartalmazó modalt
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        [picker dismissViewControllerAnimated:YES completion:nil];
     } else {
         [picker dismissViewControllerAnimated:YES completion:nil];
-        [self performSelector:@selector(tbreload) withObject:self afterDelay:1.0];
     }
-    
-    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:1]; // Itt szekció és sor módosítása
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    [self performSelector:@selector(tbreload) withObject:self afterDelay:1.0];
 }
 
+
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad && ![UIPopoverPresentationController class]) {
-        [self.popoverController dismissPopoverAnimated:YES];
-    } else {
-        [picker dismissViewControllerAnimated:YES completion:nil];
-    }
+    // Ha iPad-en vagyunk, zárjuk le a modalt
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)tbreload
@@ -621,7 +629,9 @@
     [defaults setObject:self.textV.text forKey:FeedBackText_Key];
     [defaults synchronize];
     
-   // [self.tableView reloadData];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0]; // Itt szekció és sor módosítása
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+
 }
 
 // ---------------------------------------------------------------------------------------------------------------
