@@ -6,7 +6,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/APFeedBack.svg?style=flat)](http://cocoapods.org/pods/APFeedBack)
 [![language](https://img.shields.io/badge/Language-Objective%20C-blue.svg)](http://cocoapods.org/pods/APFeedBack)
 
-![Screenshot0][img0]
+<p align="center">
+<img style="text-align:center" src="APFeedBack.png" width="50%" height="50%">
+</p>
+
 
 ## Usage
 
