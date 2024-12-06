@@ -22,10 +22,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 APFeedBack is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+##### Deprecated old version
 ````ruby
 pod "APFeedBack"
 ````
-
+# New version iOS 15*
+````ruby
+pod 'APFeedBack', '~> 0.1.4'
+````
 ## Example
 ````objective-c
 - (IBAction)feedback_Push:(id)sender;

@@ -1,16 +1,18 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '15'
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
 target 'APFeedBack_Example' do
 
-pod "APFeedBack"
+pod 'APFeedBack', '~> 0.1.4'
+
 
 end
 target 'APFeedBackSwift' do
 use_frameworks!
-pod "APFeedBack"
+pod 'APFeedBack', '~> 0.1.4'
+
 
 end
 
